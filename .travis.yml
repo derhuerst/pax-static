@@ -1,9 +1,18 @@
 sudo: false
 language: rust
+rust: stable
+cache: cargo
+# os:
+#   - linux
+#   - osx
 before_install:
   - nvm install stable
+install:
+  - npm install
 script:
-  - './build.sh'
+  - cargo install --root . pax
+after_install:
+  - if [[ "$TRAVIS_BRANCH" == "master" ]]; then ./publish.sh linux; fi'
 notifications:
   email:
     on_success: never

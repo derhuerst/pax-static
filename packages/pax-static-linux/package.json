@@ -1,0 +1,24 @@
+{
+	"name": "pax-static-linux",
+	"description": "Static pax binary for Linux.",
+	"version": "1.0.0",
+	"main": "index.js",
+	"files": [
+		"index.js",
+		"pax"
+	],
+	"keywords": [
+		"pax",
+		"static",
+		"binary",
+		"linux"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/pax-static",
+	"repository": "derhuerst/pax-static",
+	"bugs": "https://github.com/derhuerst/pax-static/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=4"
+	}
+}
