@@ -7,8 +7,6 @@ cache: cargo
 #   - osx
 before_install:
   - nvm install stable
-install:
-  - npm install
 script:
   - cargo install --root . pax
 after_install:
