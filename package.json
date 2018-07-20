@@ -1,0 +1,37 @@
+{
+	"name": "pax-static",
+	"description": "Static pax binaries for MacOS, Linux and Windows.",
+	"version": "1.0.0",
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"pax",
+		"static",
+		"library",
+		"binary",
+		"binaries",
+		"mac",
+		"linux",
+		"windows"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/pax-static",
+	"repository": "derhuerst/pax-static",
+	"bugs": "https://github.com/derhuerst/pax-static/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=6"
+	},
+	"dependencies": {
+		"pax-static-linux": "^1.0.0",
+		"pax-static-macos": "^1.0.0"
+	},
+	"devDependencies": {
+	},
+	"scripts": {
+		"test": "./test.sh",
+		"prepublishOnly": "npm run build && npm test"
+	}
+}
