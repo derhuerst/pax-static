@@ -2,15 +2,16 @@ sudo: false
 language: rust
 rust: stable
 cache: cargo
-# os:
-#   - linux
-#   - osx
+os:
+  - linux
+  - osx
 before_install:
   - nvm install stable
 script:
   - cargo install --root . pax
-after_install:
-  - if [[ "$TRAVIS_BRANCH" == "master" ]]; then ./publish.sh linux; fi'
+after_success:
+  - 'if [[ ( "$TRAVIS_BRANCH" == "master" ) && ( "$TRAVIS_OS_NAME" == "linux" ) ]]; then ./publish.sh linux; fi'
+  - 'if [[ ( "$TRAVIS_BRANCH" == "master" ) && ( "$TRAVIS_OS_NAME" == "osx" ) ]]; then ./publish.sh macos; fi'
 notifications:
   email:
     on_success: never

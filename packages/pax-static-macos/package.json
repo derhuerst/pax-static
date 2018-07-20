@@ -1,0 +1,26 @@
+{
+	"name": "pax-static-macos",
+	"description": "Static pax binary for MacOS.",
+	"version": "1.0.0",
+	"main": "index.js",
+	"files": [
+		"index.js",
+		"pax"
+	],
+	"keywords": [
+		"pax",
+		"static",
+		"binary",
+		"mac",
+		"macos",
+		"osx"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/pax-static",
+	"repository": "derhuerst/pax-static",
+	"bugs": "https://github.com/derhuerst/pax-static/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=4"
+	}
+}
