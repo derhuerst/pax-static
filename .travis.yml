@@ -10,7 +10,7 @@ before_install:
 script:
   - cargo install --root . pax
 after_install:
-  - if [[ "$TRAVIS_BRANCH" == "master" ]]; then ./publish.sh linux; fi'
+  - ./publish.sh linux
 notifications:
   email:
     on_success: never
