@@ -9,6 +9,7 @@ before_install:
   - nvm install stable
 script:
   - cargo install --root . pax
+  - npm test
 after_success:
   - 'if [[ ( "$TRAVIS_BRANCH" == "master" ) && ( "$TRAVIS_OS_NAME" == "linux" ) ]]; then ./publish.sh linux; fi'
   - 'if [[ ( "$TRAVIS_BRANCH" == "master" ) && ( "$TRAVIS_OS_NAME" == "osx" ) ]]; then ./publish.sh macos; fi'

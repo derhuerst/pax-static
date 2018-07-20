@@ -1,4 +1,5 @@
 #!/bin/sh
+set +e
 
 bin=$(node -e 'process.stdout.write(require("."))')
-$bin -h >/dev/null
+$bin -i index.js -o - >/dev/null

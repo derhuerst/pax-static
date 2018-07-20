@@ -31,7 +31,7 @@
 	"devDependencies": {
 	},
 	"scripts": {
-		"test": "./test.sh",
-		"prepublishOnly": "npm run build && npm test"
+		"test": "./test/index.sh",
+		"prepublishOnly": "npm test"
 	}
 }
