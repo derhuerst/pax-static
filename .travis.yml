@@ -9,7 +9,7 @@ before_install:
   - nvm install stable
 script:
   - cargo install --root . pax
-deploy:
+after_success:
   - ./publish.sh linux
 notifications:
   email:
