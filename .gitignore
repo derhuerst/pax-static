@@ -11,3 +11,4 @@ shrinkwrap.yaml
 
 .crates.toml
 /bin
+/packages/*/pax
